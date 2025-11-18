@@ -55,15 +55,16 @@ class Model:
                         if tourattr["id_attrazione"] == attrazione:
                             self.tour_map[tr].attrazioni.add(self.attrazioni_map[attrazione])
 
+            #print(tr, self.tour_map[tr].attrazioni)
 
-            print(tr, self.tour_map[tr].attrazioni)
         for attrazione in self.attrazioni_map:
             for tourattr in self._tour_attrazioni:
                 if tourattr["id_attrazione"] == attrazione:
                     for tr in self.tour_map:
                         if tourattr["id_tour"] == tr:
                             self.attrazioni_map[attrazione].tour.add(self.tour_map[tr])
-            print(attrazione, self.attrazioni_map[attrazione].tour)
+
+            #print(attrazione, self.attrazioni_map[attrazione].tour)
 
 
 
