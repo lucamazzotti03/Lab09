@@ -1,6 +1,6 @@
 [client]
 user=root
-password=
+password=root
 host=127.0.0.1
 database=archivio_tour
 raise_on_warnings=True
